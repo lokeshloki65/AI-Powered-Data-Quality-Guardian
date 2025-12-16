@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Quality Guardian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i> DataGuard AI
+        </div>
+        <div class="api-key-container">
+            <input type="password" id="apiKeyInput" placeholder="Enter Gemini API Key" class="api-input">
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Section 1: Hero & Upload -->
+        <section id="uploadSection" class="active-section">
+            <div class="hero-text">
+                <h1>Automatic Data Quality Control</h1>
+                <p>Upload your dataset and let our AI detect, report, and fix issues instantly.</p>
+            </div>
+
+            <div class="upload-box" id="dropZone">
+                <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                <h3>Drag & Drop your file here</h3>
+                <p>Supports CSV, Excel, JSON</p>
+                <input type="file" id="fileInput" hidden>
+                <button class="btn-primary" onclick="document.getElementById('fileInput').click()">Browse Files</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Loading Analysis -->
+        <section id="loadingSection" class="hidden">
+            <div class="loader-container">
+                <div class="spinner"></div>
+                <h2>AI is analyzing your data...</h2>
+                <p id="loadingText">Scanning for inconsistencies...</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Dashboard -->
+        <section id="dashboardSection" class="hidden">
+            <div class="dashboard-header">
+                <h2> Analysis Report</h2>
+                <div class="score-card">
+                    <span class="score-label">Quality Score</span>
+                    <span class="score-value" id="qualityScore">--</span>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card fade-in-up" style="animation-delay: 0.1s;">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <div>
+                        <h4 id="totalRows" class="counter">0</h4>
+                        <p>Total Rows</p>
+                    </div>
+                </div>
+                <div class="stat-card fade-in-up" style="animation-delay: 0.2s;">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div>
+                        <h4 id="issueCount" class="counter">0</h4>
+                        <p>Issues Found</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Preview Section -->
+            <div class="card analysis-results fade-in-up" style="animation-delay: 0.3s;">
+                <h3><i class="fa-solid fa-table"></i> Data Preview (First 5 Rows)</h3>
+                <div class="table-container">
+                    <table id="dataPreviewTable">
+                        <thead>
+                            <tr id="tableHeader"></tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card analysis-results fade-in-up" style="animation-delay: 0.4s;">
+                <h3><i class="fa-solid fa-bug"></i> Detected Issues</h3>
+                <ul id="issuesList" class="issues-list">
+                    <!-- filled by js -->
+                </ul>
+            </div>
+
+            <!-- Placeholder for future functionality -->
+            <div class="action-buttons">
+                <!-- <button class="btn-secondary">Auto-Fix Issues (Demo)</button> -->
+                <button class="btn-primary" onclick="resetApp()">Upload Another File</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,215 +1,168 @@
-🛡️ AI-Powered Data Quality Guardian
-🚀 Overview
+# 🛡️ AI-Powered Data Quality Guardian
 
-AI-Powered Data Quality Guardian is an intelligent, AI-driven web application designed to automatically analyze, detect, correct, and monitor data quality issues in business datasets.
-Using Gemini AI, the platform ensures datasets are clean, consistent, reliable, and ready for analytics or AI models with minimal human intervention.
+An AI-driven web platform that automatically detects, analyzes, and corrects data quality issues in business datasets using Gemini AI, ensuring clean, reliable, and decision-ready data.
 
-🎯 Problem Statement
+---
 
-In real-world businesses, poor data quality (missing values, duplicates, inconsistencies, invalid formats) leads to:
+## 🚀 Project Overview
 
-Wrong business decisions
+**AI-Powered Data Quality Guardian** is a smart data quality management system designed to solve one of the biggest real-world problems in data-driven organizations — **poor data quality**.  
+The platform uses **AI (Gemini API)** to automatically identify errors such as missing values, duplicates, inconsistencies, and invalid formats, and corrects them with minimal human effort.
 
-Inaccurate AI/ML model outputs
+---
 
-Financial and operational losses
+## 🎯 Problem Statement
 
-Manual data cleaning is time-consuming and error-prone. This project solves the problem by automating data quality management using AI.
+Businesses heavily rely on data for analytics, AI models, and decision-making.  
+However, real-world datasets often contain:
+- Missing or null values  
+- Duplicate records  
+- Incorrect formats  
+- Inconsistent or unreliable information  
 
-💡 Solution
+Manual data cleaning is slow, expensive, and error-prone.
 
-The platform acts as a Data Quality Guardian, continuously monitoring datasets, identifying issues, auto-correcting errors using AI, and providing clear insights through dashboards and reports.
+---
 
-✨ Key Features
-📂 Data Upload & Management
+## 💡 Solution
 
-Upload CSV / Excel / JSON files
+This project introduces an **AI-powered Data Quality Guardian** that:
+- Automatically analyzes uploaded datasets  
+- Detects data quality issues using AI  
+- Auto-corrects errors intelligently  
+- Provides before–after comparison and quality scores  
+- Gives admins full control over data governance  
 
-Auto schema & column type detection
+---
 
-Dataset version control
+## ✨ Key Features
 
-🤖 AI-Powered Data Analysis
+### 📂 Data Upload & Management
+- Upload CSV, Excel, or JSON datasets  
+- Automatic schema and column type detection  
+- Dataset versioning support  
 
-Missing value detection
+### 🤖 AI-Powered Data Quality Analysis
+- Missing value detection  
+- Duplicate record identification  
+- Invalid email, phone, and date detection  
+- Outlier and anomaly detection  
+- Semantic inconsistency detection using Gemini AI  
 
-Duplicate record identification
+### 🔧 Automatic Data Correction
+- AI-based auto-correction for common issues  
+- Smart correction suggestions with confidence scores  
+- Hybrid rule-based + AI correction engine  
+- Bulk auto-fix option  
 
-Invalid format detection (email, phone, date)
+### 🔍 Before & After Comparison
+- Side-by-side data comparison  
+- Highlighted corrected values  
+- Full change history with rollback support  
 
-Outlier & anomaly detection
+### 📊 Data Quality Scoring
+- Overall data quality score (0–100)  
+- Column-wise quality assessment  
+- Issue severity classification  
+- AI-generated quality explanations  
 
-Semantic inconsistency detection using Gemini AI
+### 🧑‍💼 Admin Dashboard
+- Approve or reject AI corrections  
+- Define custom data validation rules  
+- Manage users and roles  
+- Control AI confidence thresholds  
+- View audit logs and activity history  
 
-🔧 Automatic Data Correction
+### 📥 Export & Reports
+- Download cleaned datasets  
+- Export data quality reports  
+- Download audit and correction logs  
 
-AI-based auto-fix for common issues
+### 🔔 Automation
+- Auto-cleaning on dataset upload  
+- Scheduled data quality checks  
+- Alerts for critical quality issues  
 
-Smart correction suggestions with confidence score
+---
 
-Rule-based + AI hybrid cleaning
-
-Bulk auto-correction mode
-
-🔍 Before & After Comparison
-
-Side-by-side data comparison
-
-Highlighted corrected fields
-
-Full change history & rollback option
-
-📊 Data Quality Scoring
-
-Overall data quality score (0–100)
-
-Column-wise quality score
-
-Severity-based issue classification
-
-AI-generated quality explanation
-
-🧑‍💼 Admin Dashboard
-
-Approve / reject AI corrections
-
-Define custom data validation rules
-
-User & role management
-
-AI confidence threshold control
-
-Audit logs & activity tracking
-
-📥 Download & Export
-
-Download cleaned datasets
-
-Export quality reports (CSV / Excel / PDF)
-
-Dataset audit logs
-
-🔔 Automation & Alerts
-
-Auto-clean on upload
-
-Scheduled quality checks
-
-Notifications for critical issues
-
-🔐 Security
-
-Role-based access control
-
-Secure file handling
-
-Dataset isolation per user
-
-🧠 AI Usage (Gemini API)
+## 🧠 AI Integration (Gemini API)
 
 Gemini AI is used for:
+- Intelligent data profiling  
+- Context-aware validation  
+- Semantic consistency checks  
+- Smart auto-correction suggestions  
+- Explainable AI-based decisions  
 
-Intelligent data profiling
+---
 
-Semantic validation & context-aware checks
+## 🏗️ Tech Stack
 
-Smart auto-correction suggestions
+### Frontend
+- HTML  
+- CSS  
+- JavaScript  
 
-Explainable AI (why a correction was made)
+### Backend
+- Python  
 
-Continuous improvement using admin feedback
+### AI
+- Gemini API  
 
-🏗️ Tech Stack
-Frontend
+### Database
+- Firebase Authentication  
+- Firestore (NoSQL Database)  
 
-HTML
+---
 
-CSS
+## 🧩 System Workflow
 
-JavaScript
+1. User uploads dataset  
+2. Backend processes and profiles data  
+3. Gemini AI analyzes data quality  
+4. Auto-correction engine fixes issues  
+5. Before–after comparison is generated  
+6. Admin reviews and approves changes  
+7. Cleaned data is exported  
 
-Backend
+---
 
-Python
+## 📌 Use Cases
 
-AI
+- Business data cleaning  
+- Preprocessing data for AI/ML models  
+- Analytics and reporting pipelines  
+- Enterprise data governance  
+- Automated data validation systems  
 
-Gemini API
+---
 
-Database
+## 🏆 Why This Project Stands Out
 
-Firebase Authentication
+- AI-first, automation-driven approach  
+- Real-world business relevance  
+- Minimal manual intervention  
+- Explainable and controllable AI  
+- Hackathon-ready working solution  
 
-Firestore (NoSQL database)
+---
 
-🧩 System Architecture
+## 📈 Future Enhancements
 
-User uploads dataset
+- Real-time streaming data validation  
+- API integration for enterprise systems  
+- Advanced ML-based anomaly detection  
+- Cloud deployment with CI/CD pipelines  
 
-Backend processes data
+---
 
-Gemini AI analyzes & validates data
+## 🧑‍💻 Developed For
 
-Auto-correction engine fixes issues
+**AIM 2025 Hackathon**  
+**Theme:** *AI-Powered Data Quality Guardian*
 
-Results shown in dashboard
+---
 
-Admin reviews & approves
+## 🏁 Conclusion
 
-Cleaned data exported
-
-📌 Use Cases
-
-Data cleaning for analytics teams
-
-Preprocessing data for AI/ML models
-
-Business intelligence & reporting
-
-Data governance & compliance
-
-Enterprise data quality monitoring
-
-🏆 Why This Project Stands Out
-
-AI-first approach (not rule-only)
-
-Fully automated end-to-end workflow
-
-Real-world business relevance
-
-Scalable and enterprise-ready
-
-Explainable and controllable AI
-
-Hackathon demo-ready
-
-📸 Screens (Optional)
-
-Dataset upload screen
-
-AI analysis dashboard
-
-Before vs After comparison
-
-Admin control panel
-
-📈 Future Enhancements
-
-Real-time streaming data validation
-
-Multi-language data support
-
-API integration for enterprise systems
-
-Advanced ML-based anomaly detection
-
-Cloud deployment with CI/CD
-
-👨‍💻 Developed For
-
-AIM 2025 Hackathon – Theme: AI-Powered Data Quality Guardian
-
-🏁 Conclusion
-
-AI-Powered Data Quality Guardian transforms raw, unreliable datasets into clean, trusted, and decision-ready data using AI automation—helping businesses unlock the true value of their data.
+AI-Powered Data Quality Guardian transforms raw and unreliable datasets into **clean, trusted, and high-quality data**, enabling organizations to make accurate decisions and build better AI systems.
